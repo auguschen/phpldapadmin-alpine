@@ -10,7 +10,7 @@ if [[ -n "$LDAP_PORT" ]]; then
   sed -i "s/setValue('server','port',389/setValue('server','port',${LDAP_PORT}/" /srv/phpLDAPadmin/config/config.php
 fi
 
-if [[ -n "$BASE_DN" ]]; then
+if [[ -n "$LDAP_BASEDN" ]]; then
   sed -i "s/setValue('server','base',array('')/setValue('server','base',array('${LDAP_BASEDN}')/" /srv/phpLDAPadmin/config/config.php
 fi
 
