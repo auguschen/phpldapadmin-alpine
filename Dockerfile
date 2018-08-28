@@ -2,8 +2,7 @@ FROM alpine:latest
 
 LABEL maintainer="tianhao.chen@gmail.com"
 
-RUN apk update \
-&& apk add php5-fpm php5-ldap php5-gettext php5-xml nginx git \
+RUN apk add --no-cache php5-fpm php5-ldap php5-gettext php5-xml nginx git \
 && mkdir /run/nginx && cd /srv \
 && git clone -b master https://github.com/leenooks/phpLDAPadmin.git 
 # \
