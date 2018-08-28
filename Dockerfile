@@ -5,9 +5,11 @@ LABEL maintainer="tianhao.chen@gmail.com"
 RUN apk update \
 && apk add php5-fpm php5-ldap php5-gettext php5-xml nginx git \
 && mkdir /run/nginx && cd /srv \
-&& git clone -b master https://github.com/leenooks/phpLDAPadmin.git \
-&& cp /srv/phpLDAPadmin/config/config.php.example /srv/phpLDAPadmin/config/config.php
+&& git clone -b master https://github.com/leenooks/phpLDAPadmin.git 
+# \
+# && cp /srv/phpLDAPadmin/config/config.php.example /srv/phpLDAPadmin/config/config.php
 
+COPY script/config.php /srv/phpLDAPadmin/config/config.php
 COPY script/entrypoint.sh /entrypoint.sh
 COPY script/default.conf /etc/nginx/conf.d/default.conf
 
