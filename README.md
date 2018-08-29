@@ -29,7 +29,7 @@ phpLDAPadmin based alpine
    your situation. If you choose 'cookie', your cookie contents will be
    encrypted using blowfish and the secret your specify above as
    session['blowfish'].
-   
+
    ```
 
    Five options for auth_type:
@@ -53,3 +53,4 @@ phpLDAPadmin based alpine
    auth_type, then you can also specify the bind_id/bind_pass here for searching
    the directory for users (ie, if your LDAP server does not allow anonymous
    binds.
+
