@@ -47,7 +47,7 @@ phpLDAPadmin based alpine
 
 - LDAP_BINDID  
   `$servers->setValue('login','bind_id','')`  
-  
+
   >The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
   'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
   BLANK. If you specify a login_attr in conjunction with a cookie or session
@@ -55,3 +55,7 @@ phpLDAPadmin based alpine
   the directory for users (ie, if your LDAP server does not allow anonymous
   binds.
 
+
+### Defined Volumes
+  - /srv/phpLDAPadmin/config
+  - /etc/nginx
