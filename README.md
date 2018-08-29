@@ -2,7 +2,7 @@
 
 phpLDAPadmin based alpine
 
-### 环境变量
+### environment variables
 
 - LDAP_HOST  
   `$servers->setValue('server','host','127.0.0.1')`  
