@@ -15,4 +15,4 @@ VOLUME [ "/srv/phpLDAPadmin/config", "/etc/nginx" ]
 
 EXPOSE 80 443
 
-ENTRYPOINT [ "sh", "/entrypoint.sh" ]
+ENTRYPOINT [ "sh", "/scripts/entrypoint.sh" ]
