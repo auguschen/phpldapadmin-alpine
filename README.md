@@ -29,6 +29,7 @@ phpLDAPadmin based alpine
    your situation. If you choose 'cookie', your cookie contents will be
    encrypted using blowfish and the secret your specify above as
    session['blowfish'].
+   
    ```
 
    Five options for auth_type:
