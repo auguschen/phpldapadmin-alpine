@@ -14,12 +14,12 @@ if [[ -n "$LDAP_BASEDN" ]]; then
   sed -i "s/setValue('server','base',array('')/setValue('server','base',array('${LDAP_BASEDN}')/" /srv/phpLDAPadmin/config/config.php
 fi
 
-if [[ -n "$LDAP_AUTH_TYPE" ]]; then
-  sed -i "s/setValue('login','auth_type','session')/setValue('login','auth_type','${LDAP_AUTH_TYPE}')/" /srv/phpLDAPadmin/config/config.php
+if [[ -n "$LDAP_AUTHTYPE" ]]; then
+  sed -i "s/setValue('login','auth_type','session')/setValue('login','auth_type','${LDAP_AUTHTYPE}')/" /srv/phpLDAPadmin/config/config.php
 fi
 
-if [[ -n "$LDAP_BIND_ID" ]]; then
-  sed -i "s/setValue('login','bind_id','')/setValue('login','bind_id','${LDAP_BIND_ID}')/" /srv/phpLDAPadmin/config/config.php
+if [[ -n "$LDAP_BINDID" ]]; then
+  sed -i "s/setValue('login','bind_id','')/setValue('login','bind_id','${LDAP_BINDID}')/" /srv/phpLDAPadmin/config/config.php
 fi
 
 echo "inited."

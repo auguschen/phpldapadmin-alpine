@@ -19,7 +19,7 @@ phpLDAPadmin based alpine
    `$servers->setValue('server','base',array(''))`
    >Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin
    auto-detect it for you.
- - LDAP_AUTH_TYPE  
+ - LDAP_AUTHTYPE  
    `$servers->setValue('login','auth_type','session')`
    >Choose wisely to protect your authentication information appropriately for
    your situation. If you choose 'cookie', your cookie contents will be
@@ -38,7 +38,7 @@ phpLDAPadmin based alpine
    5. 'sasl': login will be taken from the webserver's kerberos authentication.
       Currently only GSSAPI has been tested (using mod_auth_kerb).
    ```
- - LDAP_BIND_ID  
+ - LDAP_BINDID  
    `$servers->setValue('login','bind_id','')`
    >The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
    'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
