@@ -15,6 +15,11 @@ phpLDAPadmin based alpine
           (Unix socket at /usr/local/var/run/ldap)
   ```
 
+- LDAP_SERVERNAME
+  `$servers->setValue('server','name','My LDAP Server')`
+  > A convenient name that will appear in the tree viewer and throughout
+  > phpLDAPadmin to identify this LDAP server to users.
+
 - LDAP_PORT  
   `$servers->setValue('server','port',389)`  
   > The port your LDAP server listens on (no quotes). 389 is standard.
